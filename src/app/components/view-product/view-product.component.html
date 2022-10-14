@@ -1,0 +1,52 @@
+<div class="main-view-product"> 
+   <div class="main-container">
+        <div class="item-header"> 
+            <!-- <button  class="btn-item"> Back</button> -->
+            <a routerLink="{{ prevUrl }}" class="back"><i class="fas fa-arrow-left"></i></a>
+            <!-- <button (click)="goToCart()" class="btn-item cart">Cart  </button> -->
+            <a [routerLink]="['/cart', hardwareStoreId, branchId,'none' ,0]"  class="cart"><i class="fal fa-shopping-cart"></i><span class="prod-count">{{ cartCounter > 0 ? cartCounter : '' }}</span></a>
+        </div> 
+
+       <div class="product-info">
+           <div class="description">
+                <ul class="list-group">
+                    <li class="list-group-item bg-warning"><h3 class="text-color-title">Information</h3> </li>
+                    <li class="list-group-item">
+                        <div class="desc">
+                            <h4>Decription</h4>
+                            <small>{{ product.description }}</small>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="quality">
+                            <h4>Quality</h4>
+                            <p>{{ product.quality }}</p>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="brand">
+                            <h4>Brand</h4>
+                            <p>{{ product.brand }}</p>
+                        </div>
+                    </li>
+                </ul>
+           </div>
+           <div class="view-product card"> 
+                <div class="prod-img"> 
+                    <img [src]="product?.imageFile ? 'http://fastlinehardware-001-site1.htempurl.com/' + product?.imageFile :'https://www.worldconstructiontoday.com/wp-content/uploads/press-releases/11199/Construction-Materials-Are-Used-for-Buildings.jpg'" alt="" height="328" width="728">
+                </div>
+                <div class="prod-info"> 
+                    <div class="prod-info-1">
+                        <small class="text">{{ product.stockNumber <= 10 ? 'Only '+product.stockNumber+' item/s left' : 'Total number of items: '+product.stockNumber }}</small>
+                        <p class="text" id="price"><b>Price:</b> {{ product.price | currency : 'PHP'}}</p>
+                        <h4 id="prod-name"><b>{{ product.name }}</b></h4>
+                    </div>
+                    <div class="prod-info-2">
+                        
+                        <button (click)="addToCart(product)" class="add-to-cart-btn">{{ cartBtnText }} <i class="fal fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+            </div>
+       </div>
+   </div>
+</div>

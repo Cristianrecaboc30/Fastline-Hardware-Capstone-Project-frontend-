@@ -1,0 +1,36 @@
+.status-span{
+    padding: 7px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+.pending{
+    background-color: #FDD20EFF;
+    color: black;
+} 
+.completed{
+    background-color: rgb(136, 219, 3);
+    color: black;
+}
+.cancelled{
+    background-color: red;
+    color: white;
+}
+.preparing{
+    background-color: rgb(255, 166, 0);
+    color: black;
+}
+.yes{
+    background-color: #51bfb9;
+    color: black;
+}
+.no{
+    background-color: #FDD20EFF;
+    color: black;;
+}
+.tbl-container{
+    overflow-y: scroll;
+    height: 540px;
+}
+i{
+    font-size: 19px;
+}

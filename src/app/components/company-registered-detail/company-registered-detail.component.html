@@ -1,0 +1,63 @@
+<div class="container">
+    <div class="header">
+        <h4 class="header-title">Applicant Details</h4>
+        <a class="register-btn" [routerLink]="['/main-admin', 'register-store']" [queryParams]="{detail_id : companyRegister?.id}">Register</a>
+    </div>
+    <div class="wrapper">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="">First Name</label>
+                <label class="form-control">{{ companyRegister?.firstName}}</label>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="">Last Name</label>
+                <label class="form-control">{{ companyRegister?.lastName }}</label>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="">Company Name</label>
+                <label class="form-control">{{ companyRegister?.companyName }}</label>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="">Address</label>
+                <label class="form-control">{{ companyRegister?.address }}</label>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="">Zip/Postal Code</label>
+                <label class="form-control">{{ companyRegister?.zipCode }}</label>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="">Country</label>
+                <label class="form-control">{{ companyRegister?.country }}</label>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="">Region</label>
+                <label class="form-control">{{ companyRegister?.region }}</label>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="">Email Address</label>
+                <label class="form-control">{{ companyRegister?.emailAddress }}</label>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="">Phone Number</label>
+                <label class="form-control">{{ companyRegister?.phoneNumber }}</label>
+            </div>
+        </div>
+        <!-- <div class="image">
+            
+        </div> -->
+        <div class="row mb-5 mt-3">
+            <div class="col attachment-title">
+                <label>Business Permit</label>
+                <a [routerLink]="['http://fastlinehardware-001-site1.htempurl.com/' + companyRegister?.businessPermitImageFile]" target="_blank"><img [src]="'http://fastlinehardware-001-site1.htempurl.com/' + companyRegister?.businessPermitImageFile" alt="" height="430" width="330"></a>
+            </div>
+            <div class="col attachment-title">
+                <label>DTI</label>
+                <img [src]="'http://fastlinehardware-001-site1.htempurl.com/' + companyRegister?.dtiImageFile" alt="" height="430" width="330">
+            </div>
+            <div class="col attachment-title">
+                <label>BIR</label>
+                <img [src]="'http://fastlinehardware-001-site1.htempurl.com/' + companyRegister?.birImageFile" alt="" height="430" width="330">
+            </div>
+        </div>
+    </div>
+</div>

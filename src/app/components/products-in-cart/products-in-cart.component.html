@@ -1,0 +1,11 @@
+<div class="list-products">
+    <div class="prod-loop" *ngFor="let product of productsInCart">
+        <app-product-in-cart 
+        [productInCart]="product"
+        (incrementEvent)="increment(product)"
+        (decrementEvent)="decrement(product)"
+        (removeEvent)="remove(product)"
+        (adjustQuantityEvent)="adjustQuantity($event)">
+        </app-product-in-cart>
+    </div>
+</div>

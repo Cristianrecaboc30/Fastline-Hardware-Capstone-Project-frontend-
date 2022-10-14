@@ -1,0 +1,211 @@
+#container{
+    margin-top: 30px;
+    padding: 40px;
+    /* background-image: url('https://media.istockphoto.com/photos/set-of-construction-materials-picture-id836219790?k=20&m=836219790&s=612x612&w=0&h=GQLcAlkRdMi2yKjUzdn8RMRrYjnYKvGShioqPUe8vdo=');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    filter: blur(5px);
+    -webkit-filter: 8px;
+    opacity: 0.8; */
+    height:600px;
+    width: 100%;
+}
+.content-text{
+    color: black;
+    font-weight: 700;
+}
+.content{
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    /* color: black; */
+}
+.content h3{
+    font-weight: 800;
+    font-size: 35px;
+}
+.title{
+    font-size: 40px;
+    font-weight: bolder;
+    color: #A89C94FF;
+}
+.content-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.content-adjust{
+    width: 40%;
+    padding: 20px;
+}
+.d-footer{
+    padding:10px;
+    display: flex;
+    justify-content: center;
+    /* background-color: #FCA311; */
+    height: 30vh;
+    mix-blend-mode: darken;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 9px 4px rgba(0, 0, 0, 0.37);
+    background-color: #F87D51;
+}
+.f-container{
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    align-items: center;
+    margin-top: 30px;
+}
+.footer{
+    padding: 10vh;
+    height: auto;
+}
+.footer-2{
+    padding: 10vh;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+}
+.bg-w{
+    background-color: white;
+}
+.htj-btn:hover{
+    background-color: #FCA311;
+    transition: 300ms ease-in-out;
+}
+.htj-btn{
+    padding: 15px;
+    /* padding-left: 32px;
+    padding-right: 32px; */
+    font-size : 20px;
+    font-weight: bolder;
+    /* background-color: white; */
+    border: 3px black solid;
+    /* height: 50px; */
+    width: 100%;
+    border-radius: 5px;
+    /* mix-blend-mode: darken;
+    box-sizing: border-box; */
+    background-color: #F87D51;
+    box-shadow: -4px 4px 9px rgba(0, 0, 0, 0.37);
+}
+img{
+    /* background-color: #F87D51; */
+}
+p{
+    font-weight: 700;
+    color: #FCA311;
+}
+.my-container{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.landingpage-header{
+    padding: 2vh;
+    /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; */
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+.header-title{
+    width: 10%;
+}
+.header-title{
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-start;
+    color: #FCA311;
+} 
+
+.header-title-text{
+    font-size: 24px;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-body{
+    /* background-image: url('../../../assets/images/landing_hardware.jpg'); */
+    /* background-color: #f5d020;
+    background-image: linear-gradient(315deg, #f5d020 0%, #f53803 74%); */
+    /* background-color: #ef5734;
+    background-image: linear-gradient(315deg, #ef5734 0%, #ffcc2f 74%); */
+
+    background-color: #f5d020;
+    background-image: linear-gradient(315deg, #f5d020 0%, #f33918 74%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: multiply;
+    height: 50%;
+    padding: 10vh;
+    opacity: 0.9;
+}
+/* .qoute{
+    margin-top: 5vh;
+    padding: 5vh;
+}
+.qoute:nth-child(1){
+    margin-top: 1vh;
+}
+.qoute:nth-child(2){
+    margin-left: 35vh;
+    padding-left: 20vh;
+    margin-top: 15vh;
+} */
+
+.custom-btn{
+    padding: 2vh;
+    padding-left: 6vh;
+    padding-right: 6vh;
+    border: 0;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+} 
+.custom-btn:hover{
+    /* color: #FCA311; */
+    color: #f33918;
+} 
+
+.b-700{
+    font-weight: 300;
+    font-size: 18px;
+    margin-bottom: 10px;
+} 
+.text-center{
+    text-align: center;
+    margin: 1vh;
+    padding: 10px;
+    font-weight: 800;
+    font-size: 23px
+}
+.bg-black{
+    background-color: black;
+}
+.anchor{
+    color: rgba(176, 185, 190, 0.5);
+}
+.footer-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    width: 50px;
+    height: 40px;
+    border-radius: 20%;
+    margin-right: 1vh;
+}
